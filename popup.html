@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Temp Mail Pro</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <div class="brand">
+      <div class="brand-dot"></div>
+      <h2>TempMail Pro</h2>
+    </div>
+    <span class="badge">Connected</span>
+  </div>
+  
+  <div class="card glass-panel">
+    <div class="input-group">
+      <input type="text" id="emailInput" readonly placeholder="Generating...">
+      <button id="copyBtn" class="action-btn">Copy</button>
+    </div>
+
+    <div class="input-group">
+      <input type="text" id="passwordInput" readonly value="Password##1234">
+      <button id="copyPassBtn" class="action-btn">Copy</button>
+    </div>
+    
+    <button id="autoFillBtn" class="primary-btn glow-effect">Auto-Fill Target</button>
+    <button id="continueWebBtn" class="gradient-btn">Execute 'Continue'</button>
+    <button id="generateBtn" class="secondary-btn">Generate New Identity</button>
+  </div>
+  
+  <div id="inboxSection" class="card glass-panel" style="display: none;">
+    <div class="inbox-header">
+      <h3>Inbox</h3>
+      <button id="checkInboxBtn" class="refresh-btn">Refresh</button>
+    </div>
+    <div id="messagesList">Waiting for incoming packets...</div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
